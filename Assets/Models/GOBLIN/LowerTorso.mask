@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LowerTorso
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: GOBLIN_
+    m_Weight: 1
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis
+    m_Weight: 1
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ L Thigh
+    m_Weight: 1
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ L Thigh/GOBLIN_ L Calf
+    m_Weight: 1
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ L Thigh/GOBLIN_ L Calf/GOBLIN_ L Foot
+    m_Weight: 1
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ L Thigh/GOBLIN_ L Calf/GOBLIN_ L Foot/GOBLIN_
+      L Toe0
+    m_Weight: 1
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ L Thigh/GOBLIN_ L Calf/leg_armor_L
+    m_Weight: 1
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ R Thigh
+    m_Weight: 1
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ R Thigh/GOBLIN_ R Calf
+    m_Weight: 1
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ R Thigh/GOBLIN_ R Calf/GOBLIN_ R Foot
+    m_Weight: 1
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ R Thigh/GOBLIN_ R Calf/GOBLIN_ R Foot/GOBLIN_
+      R Toe0
+    m_Weight: 1
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ R Thigh/GOBLIN_ R Calf/leg_armor_R
+    m_Weight: 1
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/forearm_armor_L
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/dagger_L
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/GOBLIN_ L Finger0
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/GOBLIN_ L Finger0/GOBLIN_ L Finger01
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/GOBLIN_ L Finger0/GOBLIN_ L Finger01/GOBLIN_
+      L Finger02
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/GOBLIN_ L Finger1
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/GOBLIN_ L Finger1/GOBLIN_ L Finger11
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/GOBLIN_ L Finger1/GOBLIN_ L Finger11/GOBLIN_
+      L Finger12
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/GOBLIN_ L Finger2
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/GOBLIN_ L Finger2/GOBLIN_ L Finger21
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/GOBLIN_ L Finger2/GOBLIN_ L Finger21/GOBLIN_
+      L Finger22
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/GOBLIN_ L Finger3
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/GOBLIN_ L Finger3/GOBLIN_ L Finger31
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/GOBLIN_ L Finger3/GOBLIN_ L Finger31/GOBLIN_
+      L Finger32
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/slingshot_body
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/slingshot_body/Factice001
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/slingshot_body/Factice002
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/slingshot_body/Factice005
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/slingshot_body/Factice005/Factice003
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/slingshot_body/Factice005/Factice004
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/slingshot_body/Factice005/slingshot_rope_middle
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/slingshot_body/Factice005/slingshot_rope_middle/stone
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/slingshot_body/slingshot_rope_L
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/GOBLIN_ L Hand/slingshot_body/slingshot_rope_R
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ L Clavicle/GOBLIN_
+      L UpperArm/GOBLIN_ L Forearm/shield
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ Neck
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ Neck/GOBLIN_
+      Head
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ Neck/GOBLIN_
+      Head/GOBLIN_ Queue de cheval 1
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/forearm_armor_R
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/dagger_R
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/GOBLIN_ R Finger0
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/GOBLIN_ R Finger0/GOBLIN_ R Finger01
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/GOBLIN_ R Finger0/GOBLIN_ R Finger01/GOBLIN_
+      R Finger02
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/GOBLIN_ R Finger1
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/GOBLIN_ R Finger1/GOBLIN_ R Finger11
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/GOBLIN_ R Finger1/GOBLIN_ R Finger11/GOBLIN_
+      R Finger12
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/GOBLIN_ R Finger2
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/GOBLIN_ R Finger2/GOBLIN_ R Finger21
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/GOBLIN_ R Finger2/GOBLIN_ R Finger21/GOBLIN_
+      R Finger22
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/GOBLIN_ R Finger3
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/GOBLIN_ R Finger3/GOBLIN_ R Finger31
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/GOBLIN_ R Finger3/GOBLIN_ R Finger31/GOBLIN_
+      R Finger32
+    m_Weight: 0
+  - m_Path: GOBLIN_/GOBLIN_ Pelvis/GOBLIN_ Spine/GOBLIN_ Spine1/GOBLIN_ R Clavicle/GOBLIN_
+      R UpperArm/GOBLIN_ R Forearm/GOBLIN_ R Hand/sword
+    m_Weight: 0
+  - m_Path: GOBLIN_BODY
+    m_Weight: 1
+  - m_Path: shoulder_armor
+    m_Weight: 0
+  - m_Path: slingshot
+    m_Weight: 0
