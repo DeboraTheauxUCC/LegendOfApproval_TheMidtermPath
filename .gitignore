@@ -38,4 +38,5 @@ ExportedObj/
 # IDE
 .idea/
 .vscode/
+.vs/
 *.DS_Store

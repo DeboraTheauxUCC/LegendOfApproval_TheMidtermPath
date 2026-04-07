@@ -522,22 +522,12 @@ ModelImporter:
   - first:
       137: 13700004
     second: slingshot
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: GOBLIN_BODY
-    second: {fileID: 2100000, guid: 1383340fa2b521a4bbb1cc544fa98c43, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: GOBLIN_PROPS
-    second: {fileID: 2100000, guid: e5c9f510d24ae2a418bf65008fb930ac, type: 2}
+  externalObjects: {}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
