@@ -174,6 +174,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!4 &249727254 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400018, guid: 369bf22314485f2499b7991776c86074, type: 3}
+  m_PrefabInstance: {fileID: 1345281539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &249727255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249727247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e8697454706334f96843a63770fec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterMovement
+  inputReader: {fileID: 11400000, guid: 2abd77002806349408f252e75affcb81, type: 2}
+  movementSpeed: 2
+  rotationSlerpSpeed: 0.15
 --- !u!1 &538296223
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,6 +558,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194231}
+  - component: {fileID: 963194232}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -663,6 +684,21 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &963194232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6735c4a6db82d4391372b6e7e3758d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraController
+  followTarget: {fileID: 249727254}
+  offset: {x: 0, y: 4, z: -6}
+  followSpeed: 3
 --- !u!1001 &1345281539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -861,6 +897,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100018, guid: 369bf22314485f2499b7991776c86074, type: 3}
       insertIndex: -1
       addedObject: {fileID: 249727250}
+    - targetCorrespondingSourceObject: {fileID: 100018, guid: 369bf22314485f2499b7991776c86074, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 249727255}
   m_SourcePrefab: {fileID: 100100000, guid: 369bf22314485f2499b7991776c86074, type: 3}
 --- !u!1 &1552966187
 GameObject:
