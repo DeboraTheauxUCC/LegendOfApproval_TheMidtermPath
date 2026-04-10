@@ -9,7 +9,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private InputReader inputReader;
 
     //referencia a componente de física.
-    Rigidbody rigidbodyComponent;
+    public Rigidbody rigidbodyComponent;
     // vector de movimiento en x,y,z su magnitud define la velocidad.
     Vector3 movementVelocity;
     //multiplicador del vector de movimiento.
@@ -26,7 +26,7 @@ public class CharacterMovement : MonoBehaviour
     [Range(0, 1)] public float rotationSlerpSpeed;
 
     //referencia a componente de animación.
-    Animator animatorComponent;
+    public Animator animatorComponent;
 
     // variables lógicas que sirven como "bandera" de los inputs del jugador
     bool isSprinting;
