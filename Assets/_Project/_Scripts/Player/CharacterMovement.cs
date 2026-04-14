@@ -1,12 +1,13 @@
-﻿using UnityEngine;
+﻿using System.ComponentModel;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(Animator))]
 public class CharacterMovement : MonoBehaviour
 {
     [Header("Dependencies")]
     // clase que detecta los inputs del jugador.
     [SerializeField] private InputReader inputReader;
+    [SerializeField] private CharacterState characterState;
 
     //referencia a componente de física.
     public Rigidbody rigidbodyComponent;
@@ -25,16 +26,11 @@ public class CharacterMovement : MonoBehaviour
     // valor de interpolación
     [Range(0, 1)] public float rotationSlerpSpeed;
 
-    //referencia a componente de animación.
-    public Animator animatorComponent;
-
     // variables lógicas que sirven como "bandera" de los inputs del jugador
     bool isSprinting;
     bool isBackwards;
-    bool isBlocking;
     bool canMove = true;
     bool canRotate = true;
-    bool canAttack = true;
 
     Vector2 moveInput;
 
@@ -52,9 +48,6 @@ public class CharacterMovement : MonoBehaviour
         inputReader.OnMoveEvent += HandleMove;
         inputReader.OnSprintStarted += HandleSprintStart;
         inputReader.OnSprintCanceled += HandleSprintCancel;
-        inputReader.OnAttackEvent += HandleAttack;
-        inputReader.OnBlockStarted += HandleBlockStart;
-        inputReader.OnBlockCanceled += HandleBlockCancel;
     }
 
     void OnDisable() // al desactivar el componente.
@@ -64,9 +57,6 @@ public class CharacterMovement : MonoBehaviour
         inputReader.OnMoveEvent -= HandleMove;
         inputReader.OnSprintStarted -= HandleSprintStart;
         inputReader.OnSprintCanceled -= HandleSprintCancel;
-        inputReader.OnAttackEvent -= HandleAttack;
-        inputReader.OnBlockStarted -= HandleBlockStart;
-        inputReader.OnBlockCanceled -= HandleBlockCancel;
     }
 
     // esto es un método que asigna un dato, escrito en una sola linea.
@@ -75,46 +65,13 @@ public class CharacterMovement : MonoBehaviour
 
     void HandleSprintStart() // si presiono shift.
     {
-        isSprinting = true; // el jugador quiere que el personaje corra
-
-        if (isBackwards) // si quiere correr "hacia atrás" de espaldas.
-        {
-            isBackwards = false; // que no pueda correr de espaldas. Configurando el parámetro en false.
-            animatorComponent.SetBool("isBackwards", false); // cancelo la animación.
-        }
+        characterState.SetMovementState(CharacterState.MovementState.Running);
     }
 
     // método con una sola linea, reducido...
     // el jugador ya no quiere que el personaje corra.
-    void HandleSprintCancel() => isSprinting = false; // si suelto shift.
+    void HandleSprintCancel() => characterState.SetMovementState(CharacterState.MovementState.Walking);
 
-    void HandleAttack() // si presiono click izquierdo.
-    {
-        // si no puedo atacar..
-        if (!canAttack) return; // return significa no leer las siguientes lineas hasta el }, es decir termina ahi el método.
-        // el if esta reducido asi que esto serïa "si puede atacar".
-        animatorComponent.SetTrigger("attack"); // activo la animación de ataque.
-    }
-
-    void HandleBlockStart() // si presiono click derecho
-    {
-        // el jugador quiere que el personaje bloquee daño.
-        isBlocking = true;
-        // si estoy bloqueando daño, no puedo atacar.
-        canAttack = false;
-        // activo la animación de bloquear. Configurando el parámetro en true.
-        animatorComponent.SetBool("isBlocking", true);
-    }
-
-    void HandleBlockCancel() // si suelto click derecho.
-    {
-        // el jugador ya no quiere que el personaje bloquee daño
-        isBlocking = false;
-        // si no estoy bloqueando, puedo atacar
-        canAttack = true;
-        // cancelo la animación de bloquear. Configurando el parámetro en false.
-        animatorComponent.SetBool("isBlocking", false);
-    }
 
     void Update() // durante todo el tiempo del juego, en el que el componente está activo.
     {
@@ -164,8 +121,6 @@ public class CharacterMovement : MonoBehaviour
         // se multiplica la velocidad actual por la velocidad, que puede ser el valor normal o duplicado.
         movementVelocity *= speed; //*= es una multiplicacion acumulada, es lo mismo que movementVelocity =  movementVelocity * speed;
 
-        // actualizar el parámetro de velocidad en la animación para diferenciar entre caminar y correr
-        animatorComponent.SetFloat("movementSpeed", movementVelocity.magnitude);
     }
 
 
@@ -185,12 +140,10 @@ public class CharacterMovement : MonoBehaviour
             if (!isBackwards && dotForward < -0.7f) // no estoy en reversa y el ángulo entre la cámara y mi mov es menor a -0.7
             {
                 isBackwards = true; // eso significa que si quiero ir en reversa
-                animatorComponent.SetBool("isBackwards", true); // activo animacion de reversa, modificando el parámtro.
             }
             else if (isBackwards && dotForward > 0f) // sino, si estoy yendo en reversa y el ángulo es mayor a cero
             {
                 isBackwards = false; // ya no estoy yendo en reversa
-                animatorComponent.SetBool("isBackwards", false); // cancelo la animación
             }
         }
 
@@ -214,12 +167,10 @@ public class CharacterMovement : MonoBehaviour
         if (movementVelocity.sqrMagnitude > 0.01f) //  al bloquear reducir de a poquito la velocidad
         {
             movementVelocity *= 0.9f;
-            animatorComponent.SetFloat("movementSpeed", movementVelocity.magnitude);
         }
         else if (movementVelocity != Vector3.zero)
         {
             movementVelocity = Vector3.zero;
-            animatorComponent.SetFloat("movementSpeed", movementVelocity.magnitude);
         }
     }
 }

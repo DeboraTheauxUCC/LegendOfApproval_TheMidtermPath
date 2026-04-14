@@ -192,8 +192,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterMovement
   inputReader: {fileID: 11400000, guid: 2abd77002806349408f252e75affcb81, type: 2}
+  rigidbodyComponent: {fileID: 249727251}
   movementSpeed: 2
   rotationSlerpSpeed: 0.15
+--- !u!95 &249727256 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 369bf22314485f2499b7991776c86074, type: 3}
+  m_PrefabInstance: {fileID: 1345281539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &249727257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249727247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225d37053390f504cb42532f87781b6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterAnimator
+  animatorComponent: {fileID: 249727256}
 --- !u!1 &538296223
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,6 +919,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100018, guid: 369bf22314485f2499b7991776c86074, type: 3}
       insertIndex: -1
       addedObject: {fileID: 249727255}
+    - targetCorrespondingSourceObject: {fileID: 100018, guid: 369bf22314485f2499b7991776c86074, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 249727257}
   m_SourcePrefab: {fileID: 100100000, guid: 369bf22314485f2499b7991776c86074, type: 3}
 --- !u!1 &1552966187
 GameObject:
